@@ -10,7 +10,7 @@ function max(numbers) {
 }
 
 //Assignment 2: Object
-function calculate(args) {
+function calculate_ass2(args) {
   var result;
   if (args.op === "+") {
     result = args.n1 + args.n2;
@@ -23,7 +23,7 @@ function calculate(args) {
 }
 
 //Assignment 3: Function, Array, and Object
-function calculate(data) {
+function calculate_ass3(data) {
   const total = data.products.reduce((sum, item) => {
     var p = sum + item.price * (1 - data.discount);
     return p;
@@ -31,7 +31,7 @@ function calculate(data) {
   return total;
 }
 
-const discountedPrice = calculate({
+const discountedPrice = calculate_ass3({
   discount: 0.1,
   products: [
     { name: "Product 1", price: 100 },
