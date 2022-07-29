@@ -11,7 +11,7 @@ function max(numbers) {
 
 //Assignment 2: Object
 function calculateAss2(args) {
-  var result;
+  let result;
   if (args.op === "+") {
     result = args.n1 + args.n2;
   } else if (args.op === "-") {
@@ -25,7 +25,7 @@ function calculateAss2(args) {
 //Assignment 3: Function, Array, and Object
 function calculateAss3(data) {
   const total = data.products.reduce((sum, item) => {
-    var p = sum + item.price * (1 - data.discount);
+    let p = sum + item.price * (1 - data.discount);
     return p;
   }, 0);
   return total;
@@ -44,8 +44,8 @@ console.log(discountedPrice); //show the total price of all products after apply
 
 //Assignment 4: Algorithm Practice
 function twoSum(nums, target) {
-  for (var i = 0; i < nums.length; i++) {
-    for (var j = i + 1; j < nums.length; j++) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] + nums[j] == target) {
         return [i, j];
       }
@@ -58,7 +58,7 @@ function twoSum(nums, target) {
 function delayedResult(n1, n2, delayTime, callback) {
   setTimeout(function () {
     callback(n1 + n2);
-  }, delayTime - 1000);
+  }, delayTime);
 }
 
 // delayedResult(4, 5, 3000, function(result) {
