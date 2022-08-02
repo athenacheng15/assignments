@@ -1,0 +1,23 @@
+img{
+    border-radius: 20px;
+}
+
+.content{
+    display: flex;
+    margin: 20px;
+}
+
+.cnt-text{
+    margin-left: 20px;
+}
+
+h1{
+    color:#9B7750 ;
+    font-size: 35px;
+}
+
+h2{
+    margin-top: 70px;
+    color: #6D5944;
+    font-size: 25px;
+}

@@ -3,7 +3,7 @@ const welcomeBox = document.querySelector(".welcome-message");
 
 welcomeBox.addEventListener("click", () => {
   const text = document.querySelector(".welcome-message p");
-  text.textContent = "Have a Good Time";
+  text.textContent = "Have a Good Time!";
 });
 
 // 2.Click to Show/Close Menu.
