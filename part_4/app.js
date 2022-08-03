@@ -5,6 +5,8 @@ app.get("/", function (req, res) {
   res.send("Server is up and running. ヽ(*´∀`)ﾉﾟ");
 });
 
+app.use(express.static("public"));
+
 app.get("/getData", function (req, res) {
   const number = req.query.number;
   let result;
