@@ -24,7 +24,13 @@
 
         function getResult() {
             let num = document.querySelector("#userInput").value;
-            let url = `http://localhost:3000/getData?number=${num}`;
+            let url;
+            if (num == "") {
+                url = "http://localhost:3000/getData";
+            } else {
+                url = `http://localhost:3000/getData?number=${num}`;
+            }
+
             fetch(url)
                 .then((response) => response.text())
                 .then((data) => (content.textContent = `The result is ${data}`));
